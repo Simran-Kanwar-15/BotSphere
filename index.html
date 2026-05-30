@@ -1226,6 +1226,34 @@
       align-items: center;
       gap: 1.25rem;
       margin-bottom: 2rem;
+      position: relative;
+    }
+    .back-to-dashboard {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      position: absolute;
+      top: -2.5rem;
+      left: 0;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border-active);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: var(--cyan);
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      backdrop-filter: blur(10px);
+      text-decoration: none;
+    }
+    .back-to-dashboard:hover {
+      background: var(--cyan-dim, rgba(0,212,255,0.1));
+      box-shadow: 0 0 12px rgba(0,212,255,0.3);
+      transform: translateX(-3px);
     }
     .tool-icon-wrap {
       width: 56px;
@@ -2506,6 +2534,7 @@
     <!-- 2. LinkedIn Post Gen -->
     <div class="tab-panel" id="linkedin">
       <div class="tool-header">
+        <button class="back-to-dashboard" onclick="switchTab('overview')">← Dashboard</button>
         <div class="tool-icon-wrap cyan-glow-wrap">💼</div>
         <div>
           <h1 class="tool-title">LinkedIn Post Generator</h1>
@@ -2570,6 +2599,7 @@
     <!-- 3. Insta Caption Gen -->
     <div class="tab-panel" id="instagram">
       <div class="tool-header">
+        <button class="back-to-dashboard" onclick="switchTab('overview')">← Dashboard</button>
         <div class="tool-icon-wrap pink-glow-wrap">📸</div>
         <div>
           <h1 class="tool-title" style="color: var(--pink);">Instagram Caption Generator</h1>
@@ -2659,6 +2689,7 @@
     <!-- 4. Email Writer -->
     <div class="tab-panel" id="email">
       <div class="tool-header">
+        <button class="back-to-dashboard" onclick="switchTab('overview')">← Dashboard</button>
         <div class="tool-icon-wrap blue-glow-wrap">✉️</div>
         <div>
           <h1 class="tool-title">AI Email Writer</h1>
@@ -2785,6 +2816,7 @@
     <!-- 5. Interior Designer -->
     <div class="tab-panel" id="interior">
       <div class="tool-header">
+        <button class="back-to-dashboard" onclick="switchTab('overview')">← Dashboard</button>
         <div class="tool-icon-wrap gold-glow-wrap">🛋️</div>
         <div>
           <h1 class="tool-title" style="color: var(--text-gold);">AI Interior Designer</h1>
@@ -2953,6 +2985,7 @@
     <!-- 6. Commands -->
     <div class="tab-panel" id="commands">
       <div class="tool-header">
+        <button class="back-to-dashboard" onclick="switchTab('overview')">← Dashboard</button>
         <div class="tool-icon-wrap cyan-glow-wrap">⚡</div>
         <div>
           <h1 class="tool-title">AI System Console</h1>
@@ -3027,7 +3060,8 @@
 
     <!-- 7. Projects -->
     <div class="tab-panel" id="projects">
-      <div class="panel-header">
+      <div class="panel-header" style="position:relative;">
+        <button class="back-to-dashboard" onclick="switchTab('overview')">← Dashboard</button>
         <h1 class="panel-title">Demo Projects</h1>
         <p class="panel-subtitle">Explore pre-configured AI applications and system templates</p>
       </div>
