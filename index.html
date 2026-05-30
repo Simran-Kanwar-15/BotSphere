@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IntegraAI — Advanced AI Operating System Platform</title>
+  <title>BotSphere — Advanced AI Operating System Platform</title>
   
   <!-- Google Fonts Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2018,8 +2018,8 @@
     
     <div class="glass-card login-card" style="width: min(440px, 94vw); padding: 2.5rem; position: relative; z-index: 1; border-top: 4px solid transparent; border-image: linear-gradient(90deg, var(--cyan), var(--purple)) 1; box-shadow: var(--glass-shadow);">
       <div class="login-header" style="text-align: center; margin-bottom: 2rem;">
-        <div class="logo-mark" style="width: 56px; height: 56px; margin: 0 auto 12px; font-size: 18px; display: flex; align-items: center; justify-content: center;">ia</div>
-        <h2 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.5px;">IntegraAI OS</h2>
+        <div class="logo-mark" style="width: 56px; height: 56px; margin: 0 auto 12px; font-size: 18px; display: flex; align-items: center; justify-content: center;">bs</div>
+        <h2 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem; letter-spacing: 0.5px;">BotSphere OS</h2>
         <p style="font-size: 0.85rem; color: var(--text-secondary);" id="login-subtitle">System Authorization Required</p>
       </div>
 
@@ -2033,7 +2033,7 @@
       <form id="auth-form" onsubmit="handleAuthSubmit(event)" style="display: flex; flex-direction: column; gap: 1rem;">
         <div>
           <label class="field-label" for="auth-email">Security Email</label>
-          <input type="email" id="auth-email" class="ai-input" placeholder="admin@integra.ai" required style="margin-top: 0.25rem;">
+          <input type="email" id="auth-email" class="ai-input" placeholder="admin@botsphere.ai" required style="margin-top: 0.25rem;">
         </div>
         
         <div>
@@ -2070,10 +2070,10 @@
   <header class="navbar">
     <!-- Left — Logo group -->
     <a href="#" class="logo-group">
-      <div class="logo-mark">ia</div>
+      <div class="logo-mark">bs</div>
       <div class="logo-text-wrap">
-        <span style="color: var(--text-logo-main);">Integra</span>
-        <span style="color: var(--cyan);">AI</span>
+        <span style="color: var(--text-logo-main);">Bot</span>
+        <span style="color: var(--cyan);">Sphere</span>
       </div>
     </a>
 
@@ -2095,13 +2095,13 @@
       <!-- User Avatar & Dropdown Wrap -->
       <div style="position: relative; display: inline-block;">
         <div class="avatar-wrap" id="avatar-trigger" style="cursor: pointer;" onclick="toggleProfileDropdown(event)">
-          <div class="avatar-inner" id="avatar-initials">IA</div>
+          <div class="avatar-inner" id="avatar-initials">BS</div>
         </div>
         <!-- Profile Dropdown Menu -->
         <div id="profile-dropdown" class="glass-card" style="display: none; position: absolute; top: calc(100% + 12px); right: 0; width: 220px; padding: 0.75rem 0; z-index: 1001; box-shadow: var(--glass-shadow); border-top: 2px solid var(--cyan); text-align: left; transform: translateY(10px); opacity: 0; transition: transform 0.2s ease, opacity 0.2s ease; pointer-events: none;">
           <div style="padding: 0.5rem 1.25rem 0.75rem; border-bottom: 1px solid var(--glass-border); margin-bottom: 0.5rem;">
             <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Authorized User</div>
-            <div id="dropdown-user-email" style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); word-break: break-all; margin-top: 2px; font-family: var(--font-body);">admin@integra.ai</div>
+            <div id="dropdown-user-email" style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); word-break: break-all; margin-top: 2px; font-family: var(--font-body);">admin@botsphere.ai</div>
           </div>
           <a onclick="openSettings(); closeProfileDropdown();" class="dropdown-item">
             <span>⚙️</span> Account Settings
@@ -2199,7 +2199,7 @@
   <div id="community-modal" class="modal-overlay" onclick="closeCommunityModal(event)">
     <div class="modal-box">
       <button class="modal-close-btn" onclick="closeCommunityModal()">✕</button>
-      <h2 class="modal-title">🌐 IntegraAI Community</h2>
+      <h2 class="modal-title">🌐 BotSphere Community</h2>
       <p class="modal-sub">Connect with AI builders, share creations, and learn from the community.</p>
 
       <div class="community-grid">
@@ -2671,7 +2671,7 @@
         <div class="glass-card email-sidebar" style="padding: 1.25rem;">
           <div style="font-family: var(--font-body); font-size: 13px; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Quick Templates</div>
           <div style="display: flex; flex-direction: column;">
-            <button class="template-btn" data-template="Dear [Name],\n\nThank you so much for the opportunity to interview for the [Role] position. I thoroughly enjoyed our conversation and learning more about the team.\n\nI am very excited about the possibility of joining IntegraAI and bringing my skills in [Skill] to the company.\n\nBest regards,\n[Your Name]" onclick="setTemplate(this)">📨 Follow Up After Interview</button>
+            <button class="template-btn" data-template="Dear [Name],\n\nThank you so much for the opportunity to interview for the [Role] position. I thoroughly enjoyed our conversation and learning more about the team.\n\nI am very excited about the possibility of joining BotSphere and bringing my skills in [Skill] to the company.\n\nBest regards,\n[Your Name]" onclick="setTemplate(this)">📨 Follow Up After Interview</button>
             <button class="template-btn" data-template="Hi [Name],\n\nI hope this email finds you well. I would like to schedule a brief meeting to discuss [Topic]. Please let me know your availability this week.\n\nBest,\n[Your Name]" onclick="setTemplate(this)">🤝 Request a Meeting</button>
             <button class="template-btn" data-template="Hello [Name],\n\nPlease find attached our proposal for the [Project] project. It outlines our approach, deliverables, and pricing.\n\nLet me know if you have any questions or feedback.\n\nBest regards,\n[Your Name]" onclick="setTemplate(this)">📊 Send a Proposal</button>
             <button class="template-btn" data-template="Dear [Name],\n\nPlease accept my sincere apologies for [Issue]. We take full responsibility and are taking steps to ensure this does not happen again.\n\nThank you for your understanding.\n\nSincerely,\n[Your Name]" onclick="setTemplate(this)">🙏 Apology Email</button>
@@ -2751,7 +2751,7 @@
           <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem;">
             <div class="email-meta-row">
               <span class="email-field-label">From:</span>
-              <span style="color: var(--text-primary)">IntegraAI User</span>
+              <span style="color: var(--text-primary)">BotSphere User</span>
             </div>
             <div class="email-meta-row">
               <span class="email-field-label">To:</span>
@@ -2969,19 +2969,19 @@
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <span class="terminal-title">INTEGRA_OS_CLI v2.0.6 (TTY/1)</span>
+            <span class="terminal-title">BOTSPHERE_OS_CLI v2.0.6 (TTY/1)</span>
           </div>
 
           <!-- CLI Screen -->
           <div id="cli-screen" style="height: 320px; overflow-y: auto; font-family: var(--font-mono); font-size: 13px; color: var(--green-status); line-height: 1.6; margin-bottom: 1rem; padding-right: 8px;">
             <div style="color: var(--text-muted); margin-bottom: 1rem;">
-              IntegraAI OS Command Shell. Type <span style="color: var(--cyan); font-weight: 600;">/ai-help</span> to list all available directives.
+              BotSphere OS Command Shell. Type <span style="color: var(--cyan); font-weight: 600;">/ai-help</span> to list all available directives.
             </div>
           </div>
 
           <!-- CLI Input Line -->
           <div style="position: relative; display: flex; align-items: center; background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); border-radius: var(--radius-sm); padding: 0.6rem 1rem;">
-            <span style="font-family: var(--font-mono); font-size: 13px; color: var(--cyan); margin-right: 8px; user-select: none;">ia-os@user:~$</span>
+            <span style="font-family: var(--font-mono); font-size: 13px; color: var(--cyan); margin-right: 8px; user-select: none;">bs-os@user:~$</span>
             <input type="text" id="cli-input" autocomplete="off" placeholder="Type a directive (e.g. /ai-help, /generate)..." 
               style="flex: 1; background: transparent; border: none; outline: none; color: #fff; font-family: var(--font-mono); font-size: 13px; padding: 4px 0;">
             <button onclick="submitCliCommand()" class="icon-btn" style="border-color: var(--glass-border-active); color: var(--cyan); padding: 4px 12px; font-family: var(--font-mono); font-size: 11px; margin-left: 8px;">RUN</button>
@@ -3145,7 +3145,7 @@
     // ── SECTION 1: CONSTANTS & CONFIG ─────────────────────────────────────
     const GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions";
 
-    function getKey() { return localStorage.getItem('integra_api_key') || ''; }
+    function getKey() { return localStorage.getItem('botsphere_api_key') || ''; }
 
     // Decommissioned model migration — runs once on every page load
     const DECOMMISSIONED_MODELS = [
@@ -3156,14 +3156,14 @@
       'gemma2-9b-it'
     ];
     (function migrateModel() {
-      const stored = localStorage.getItem('integra_model');
+      const stored = localStorage.getItem('botsphere_model');
       if (stored && DECOMMISSIONED_MODELS.includes(stored)) {
-        localStorage.setItem('integra_model', 'llama-3.3-70b-versatile');
+        localStorage.setItem('botsphere_model', 'llama-3.3-70b-versatile');
       }
     })();
 
     function getModel() { 
-      return localStorage.getItem('integra_model') || 'llama-3.3-70b-versatile'; 
+      return localStorage.getItem('botsphere_model') || 'llama-3.3-70b-versatile'; 
     }
 
     // ── SECTION 2: GROQ API CALL ───────────────────────────────────────────
@@ -3331,8 +3331,8 @@
 
     // ── SECTION 4: HISTORY MANAGEMENT ─────────────────────────────────────
     function saveHistory(tool, inputPreview, output) {
-      if (!localStorage.getItem('integra_autosave') || 
-          localStorage.getItem('integra_autosave') === 'true') {
+      if (!localStorage.getItem('botsphere_autosave') || 
+          localStorage.getItem('botsphere_autosave') === 'true') {
         const key = 'history_' + tool;
         const history = JSON.parse(localStorage.getItem(key) || '[]');
         history.unshift({
@@ -3485,7 +3485,7 @@
     const themeCheckbox = document.getElementById('theme-toggle-input');
     if (themeCheckbox) {
       // Load saved theme preference
-      const savedTheme = localStorage.getItem('integra_theme');
+      const savedTheme = localStorage.getItem('botsphere_theme');
       if (savedTheme === 'light') {
         themeCheckbox.checked = true;
         applyLightTheme();
@@ -3494,10 +3494,10 @@
       themeCheckbox.addEventListener('change', () => {
         if (themeCheckbox.checked) {
           applyLightTheme();
-          localStorage.setItem('integra_theme', 'light');
+          localStorage.setItem('botsphere_theme', 'light');
         } else {
           applyDarkTheme();
-          localStorage.setItem('integra_theme', 'dark');
+          localStorage.setItem('botsphere_theme', 'dark');
         }
       });
     }
@@ -4014,11 +4014,11 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
     function saveSettings() {
       const key = document.getElementById('settings-key')?.value?.trim();
       if (key) {
-        localStorage.setItem('integra_api_key', key);
+        localStorage.setItem('botsphere_api_key', key);
         showToast('API key saved ✓', 'success');
       }
       const selectedModel = document.querySelector('input[name="model"]:checked')?.value;
-      if (selectedModel) localStorage.setItem('integra_model', selectedModel);
+      if (selectedModel) localStorage.setItem('botsphere_model', selectedModel);
       updateKeyStatus();
       updateModelBadges();
       closeSettings();
@@ -4236,7 +4236,7 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
 
     // ── SECTION 14: TERMINAL LOG ───────────────────────────────────────────
     const terminalLines = [
-      'Initializing IntegraAI v2.0.6...',
+      'Initializing BotSphere v2.0.6...',
       'Loading language model: llama-3.3-70b-versatile...',
       'Connecting to Groq inference engine...',
       'Neural pathways established ✓',
@@ -4247,7 +4247,7 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
       'History module loaded from localStorage',
       'Theme engine initialized',
       'System ready. Awaiting commands.',
-      'IntegraAI OS v2.0.6 — All systems nominal ✓'
+      'BotSphere OS v2.0.6 — All systems nominal ✓'
     ];
 
     let terminalLineIndex = 0;
@@ -4350,12 +4350,12 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
         return;
       }
 
-      const users = JSON.parse(localStorage.getItem('integra_users') || '[]');
+      const users = JSON.parse(localStorage.getItem('botsphere_users') || '[]');
 
       if (authMode === 'signin') {
         // Sign In
         const user = users.find(u => u.email.toLowerCase() === email.toLowerCase());
-        const isDemo = email.toLowerCase() === 'admin@integra.ai' && password === 'password123';
+        const isDemo = email.toLowerCase() === 'admin@botsphere.ai' && password === 'password123';
         
         if (isDemo || (user && user.password === password)) {
           // Success
@@ -4365,7 +4365,7 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
         }
       } else {
         // Sign Up
-        const userExists = users.some(u => u.email.toLowerCase() === email.toLowerCase()) || email.toLowerCase() === 'admin@integra.ai';
+        const userExists = users.some(u => u.email.toLowerCase() === email.toLowerCase()) || email.toLowerCase() === 'admin@botsphere.ai';
         if (userExists) {
           showAuthError('User email already registered.');
           return;
@@ -4373,7 +4373,7 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
 
         // Add user
         users.push({ email: email, password: password });
-        localStorage.setItem('integra_users', JSON.stringify(users));
+        localStorage.setItem('botsphere_users', JSON.stringify(users));
         
         performLogin(email, true);
       }
@@ -4388,8 +4388,8 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
     }
 
     function performLogin(email, isNewUser = false) {
-      localStorage.setItem('integra_logged_in', 'true');
-      localStorage.setItem('integra_user_email', email);
+      localStorage.setItem('botsphere_logged_in', 'true');
+      localStorage.setItem('botsphere_user_email', email);
       
       closeLoginOverlay();
       updateUserUI();
@@ -4400,23 +4400,23 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
     }
 
     function quickDemoSignIn() {
-      document.getElementById('auth-email').value = 'admin@integra.ai';
+      document.getElementById('auth-email').value = 'admin@botsphere.ai';
       document.getElementById('auth-password').value = 'password123';
       
       const errorEl = document.getElementById('auth-error');
       if (errorEl) errorEl.style.display = 'none';
 
-      performLogin('admin@integra.ai');
+      performLogin('admin@botsphere.ai');
     }
 
     function updateUserUI() {
-      const email = localStorage.getItem('integra_user_email') || 'admin@integra.ai';
+      const email = localStorage.getItem('botsphere_user_email') || 'admin@botsphere.ai';
       
       // Update Navbar Initials
       const initialsEl = document.getElementById('avatar-initials');
       if (initialsEl) {
         const parts = email.split('@')[0].split(/[._-]/);
-        let initials = 'IA';
+        let initials = 'BS';
         if (parts.length >= 2 && parts[0] && parts[1]) {
           initials = (parts[0][0] + parts[1][0]).toUpperCase();
         } else if (parts[0]) {
@@ -4461,8 +4461,8 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
     }
 
     function handleSignOut() {
-      localStorage.removeItem('integra_logged_in');
-      localStorage.removeItem('integra_user_email');
+      localStorage.removeItem('botsphere_logged_in');
+      localStorage.removeItem('botsphere_user_email');
       
       // Show login overlay
       openLoginOverlay();
@@ -4486,7 +4486,7 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
     // ── SECTION 15: INIT ───────────────────────────────────────────────────
     function init() {
       // Check login state
-      if (localStorage.getItem('integra_logged_in') !== 'true') {
+      if (localStorage.getItem('botsphere_logged_in') !== 'true') {
         openLoginOverlay();
       } else {
         updateUserUI();
@@ -4691,7 +4691,7 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
       const ts = new Date().toTimeString().slice(0, 8);
       const userLine = document.createElement('div');
       userLine.style.margin = '0.5rem 0';
-      userLine.innerHTML = `<span class="terminal-ts">[${ts}]</span> <span style="color:#fff;">ia-os@user:~$</span> ${escapeHtml(rawVal)}`;
+      userLine.innerHTML = `<span class="terminal-ts">[${ts}]</span> <span style="color:#fff;">bs-os@user:~$</span> ${escapeHtml(rawVal)}`;
       screen.appendChild(userLine);
       screen.scrollTop = screen.scrollHeight;
 
@@ -4730,7 +4730,7 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
 
       try {
         let answer = '';
-        const systemPrompt = `You are a sleek, hyper-intelligent CLI kernel assistant in the IntegraAI OS. 
+        const systemPrompt = `You are a sleek, hyper-intelligent CLI kernel assistant in the BotSphere OS. 
         Execute the command: ${cmd} with input: ${prompt}.
         Respond in a clear, formatted, futuristic terminal-friendly style. Keep answers concise, highly informative, and directly outputted. No greetings or fluff before/after.`;
 
@@ -4751,17 +4751,17 @@ Use ₹ for all prices. Be specific with Indian brands and stores.`;
           clearInterval(interval);
           
           if (cmd === '/generate') {
-            answer = `✦ GENERATION ENGINE ACTIVE\nTopic: ${prompt}\n\n[VIRAL HOOK]: Most people think building an AI application requires months of development.\nThey are wrong.\n\n[THE SECRET]: You only need structured interfaces and strong base system kernels.\nHere are the 3 steps to construct it:\n1. Choose an API layer (e.g. Groq/LLaMA)\n2. Wire a robust, sandboxed state framework\n3. Polish styling with micro-animations\n\n#IntegraAI #TechInspiration #SystemEngineering`;
+            answer = `✦ GENERATION ENGINE ACTIVE\nTopic: ${prompt}\n\n[VIRAL HOOK]: Most people think building an AI application requires months of development.\nThey are wrong.\n\n[THE SECRET]: You only need structured interfaces and strong base system kernels.\nHere are the 3 steps to construct it:\n1. Choose an API layer (e.g. Groq/LLaMA)\n2. Wire a robust, sandboxed state framework\n3. Polish styling with micro-animations\n\n#BotSphere #TechInspiration #SystemEngineering`;
           } else if (cmd === '/design') {
             answer = `✦ SYSTEM SPATIAL DESIGN MODEL\nTarget Style: ${prompt}\n\n- Primary Accent: #00d4ff (Neon Cyan)\n- Secondary: #7b2fff (Cyber Purple)\n- Layout Model: Glassmorphic grid panels, responsive flex borders\n- Typography: 'Orbitron' for displays, 'Exo 2' for body`;
           } else if (cmd === '/write') {
-            answer = `✦ EMAIL OUTREACH LAYOUT\nTopic: ${prompt}\n\nSubject: Partnering on next-generation AI pipelines\n\nHi Partner,\n\nI noticed you are currently expanding your B2B automation tools. IntegraAI OS supports highly-optimized inference pipelines with under 50ms latency.\n\nLet me know if you have 10 minutes for a brief developer demo.\n\nBest,\nIntegra User`;
+            answer = `✦ EMAIL OUTREACH LAYOUT\nTopic: ${prompt}\n\nSubject: Partnering on next-generation AI pipelines\n\nHi Partner,\n\nI noticed you are currently expanding your B2B automation tools. BotSphere OS supports highly-optimized inference pipelines with under 50ms latency.\n\nLet me know if you have 10 minutes for a brief developer demo.\n\nBest,\nBotSphere User`;
           } else if (cmd === '/improve') {
             answer = `✦ INTELLIGENT REWRITE MODEL\nOriginal: "${prompt}"\n\nPolished Version:\n"Deploy our hyper-optimized, low-latency AI kernels to scale operational efficiency with next-gen automated intelligence."`;
           } else if (cmd === '/summarize') {
             answer = `✦ EXECUTIVE SUMMARY PIPELINE\nInput Length: ${prompt.length} chars\n\n- Core Highlight: The user requested a system summarization run.\n- Takeaway 1: Focus on low-latency local execution protocols.\n- Takeaway 2: Maintain clear design aesthetics to maximize user engagement.`;
           } else if (cmd === '/ai-help') {
-            answer = `✦ INTEGRA_OS V2.0 KERNEL ASSISTANT\n\nIntegraAI OS is a state-of-the-art Web Application framework running high-speed Groq LLM layers. \n\nAvailable System Directives:\n- /generate [prompt]  : Create high-performing social content\n- /design [style]     : Build modern design system specifications\n- /write [topic]      : Construct outreach emails instantly\n- /improve [text]     : Elevate grammar, syntax and style parameters\n- /summarize [text]   : Distill complex papers and articles\n- /ai-help [question] : Resolve any interface or deployment questions\n\n*System Authorization Status: DEMO MODE (API Key can be configured in Settings ⚙️ for Live Mode)`;
+            answer = `✦ BOTSPHERE_OS V2.0 KERNEL ASSISTANT\n\nBotSphere OS is a state-of-the-art Web Application framework running high-speed Groq LLM layers. \n\nAvailable System Directives:\n- /generate [prompt]  : Create high-performing social content\n- /design [style]     : Build modern design system specifications\n- /write [topic]      : Construct outreach emails instantly\n- /improve [text]     : Elevate grammar, syntax and style parameters\n- /summarize [text]   : Distill complex papers and articles\n- /ai-help [question] : Resolve any interface or deployment questions\n\n*System Authorization Status: DEMO MODE (API Key can be configured in Settings ⚙️ for Live Mode)`;
           }
         }
 
